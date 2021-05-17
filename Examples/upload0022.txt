@@ -1,0 +1,1 @@
+Table Name:qualificationstable\n1\tND\tNATIONAL DIPLOMA\t\n2\tHND\tHIGHER NATIONAL DIPLOMA\t\n

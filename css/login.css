@@ -1,0 +1,136 @@
+/* 
+    Document   : login
+    Created on : 25-Dec-2009, 10:33:51
+    Author     : Adewale Azeez
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+body{
+
+}
+
+body, h1 {
+    margin:0px;
+    /* Browser compatibility fix:
+    required for IE 5.x and for IE 6 quirks mode
+    as they do not properly support margin:auto */
+    /*text-align:center;*/
+}
+
+body {
+    /* Opera's default body padding is non-zero */
+    padding:0px;
+
+    background-color:#fff;
+    color:#000;
+
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    font-size:.8em;
+}
+
+
+/* container for the table and form */
+#loginFormPanel, #registerFormPanel {
+    clear:both;
+
+    height: 180px;
+    width: 320px;
+    margin-top:60px;
+    margin-bottom: 20px;
+    /* center alignment for standards compliance mode */
+    margin-left:auto;
+    margin-right:auto;
+
+    background-color:#ddd;
+
+    /* 3D effect */
+    border-top:1px solid #999;
+    border-left:1px solid #999;
+    border-right:2px solid #666;
+    border-bottom:2px solid #666;
+}
+
+/* title for loginFormPanel */
+#loginFormPanel h1, #registerFormPanel h1 {
+    padding:3px;
+
+    color:#fff;
+    background-color:#33c;
+
+    /* blue background effect */
+    background-image:url('../images/blue-header-fade.gif');
+    background-position:top left;
+    background-repeat:repeat-x;
+
+    text-align:left;
+    font-size:16px;
+
+    border-bottom:1px solid #999;
+}
+
+/* oraganizes form elements */
+#loginFormPanel table, #registerFormPanel table {
+    height:115px;
+    width:280px;
+
+    margin-top:15px;
+    /* center align */
+    margin-left:auto;
+    margin-right:auto;
+
+    background-color:#fff;
+
+    border-color:#000;
+    border-style:solid;
+    border-width:1px;
+}
+
+/* form cells */
+#loginFormPanel td, #registerFormPanel td{
+    /*text-align:center;*/
+}
+
+#loginFormPanel td.input, #registerFormPanel td.input {
+    text-align:left;
+}
+
+
+/* form labels */
+.formLabel, .resultLabel {
+    color:#333;
+    font-size:12px;
+    font-weight:bold;
+}
+.resultLabel {
+    text-align:right;
+    width: 50%;
+}
+.resultValue{
+    text-align:left;
+    width: 50%;
+}
+
+/* inputText, selectOneMenu */
+.textField, .textFieldDynamic {
+    background-color:#efefef;
+    color:#333333;
+    border-top:1px solid #343434;
+    border-left:1px solid #343434;
+    border-bottom:1px solid #9a9a9a;
+    border-right:1px solid #ABABAB;
+}
+.textFieldDynamic:hover, .textField:hover {
+    background-color:#fff;
+    color:#333333;
+    border-top:1px solid #343434;
+    border-left:1px solid #343434;
+    border-bottom:1px solid #9a9a9a;
+    border-right:1px solid #ABABAB;
+}

@@ -1,0 +1,15 @@
+ALTER TABLE `dadollar`.`transactions` ADD COLUMN `lineno` VARCHAR(10) AFTER `recordlock`;
+CREATE TABLE  `dadollar`.`transactionlist` (
+  `serialno` int(10) unsigned NOT NULL auto_increment,
+  `lineno` varchar(10) default NULL,
+  `cardno` varchar(50) default NULL,
+  `transdate` datetime default NULL,
+  `balance_b` double default NULL,
+  `amount` double default NULL,
+  `balance_a` double default NULL,
+  `transtype` varchar(10) default NULL,
+  `transgroup` varchar(20) default NULL,
+  `username` varchar(50) default NULL,
+  `recordlock` varchar(10) default NULL,
+  PRIMARY KEY  (`serialno`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;

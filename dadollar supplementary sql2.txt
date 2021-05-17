@@ -1,0 +1,7 @@
+use dadollar;
+ALTER TABLE `dadollar`.`customers` ADD COLUMN `openingbalance` DOUBLE AFTER `passportpicture`;
+ALTER TABLE `dadollar`.`customers` ADD COLUMN `lockwithdrawal` VARCHAR(1) AFTER `recordlock`;
+ALTER TABLE `dadollar`.`users` MODIFY COLUMN `userPassword` VARCHAR(20) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL;
+delete FROM loancustomers where serialno>0;
+delete FROM customers where serialno>0;
+delete FROM transactions where serialno>0;
